@@ -6,16 +6,16 @@ export default function FeedbackButtons() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  goodFeedback = () => {
-    setGood(prevState => prevState + 1);
+  const goodFeedback = () => {
+    setGood(good + 1);
   };
 
-  neytralFeedback = () => {
-    setNeutral(prevState => prevState + 1);
+  const neytralFeedback = () => {
+    setNeutral(neutral + 1);
   };
 
-  badFeedback = () => {
-    setBad(prevState => prevState + 1);
+  const badFeedback = () => {
+    setBad(bad + 1);
   };
 
   const FeedbackButtonsState = useState();
